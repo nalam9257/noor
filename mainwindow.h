@@ -17,6 +17,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+//    void check_sender_bytes(QByteArray str);
+
+    void sendAck(unsigned int cmdId);
+signals:
+    void acknowledgement();
+
 
 
 private slots:
